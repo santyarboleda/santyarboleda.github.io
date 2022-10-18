@@ -7,3 +7,7 @@ description: Write an awesome description for your new site here
 topnav_title: Titulo
 company_name: Copyright 2021 Santiago Arboleda
 feedback_email: sanarboleda6@hotmail.com
+
+# plugin options
+readme_index:
+  with_frontmatter: true
