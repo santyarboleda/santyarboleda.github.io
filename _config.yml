@@ -5,3 +5,22 @@ description: Write an awesome description for your new site here
 # plugin options
 readme_index:
   with_frontmatter: true
+  
+ # optional settings
+meta:
+  key1: value1
+  key2: value2
+  .
+  .
+  .
+google:
+  gtag:
+  adsense:
+mermaid:
+  custom: # mermaid link
+  initialize: # mermaid options
+# optional plugins
+plugins:
+  - jemoji
+  - jekyll-avatar
+  - jekyll-mentions
