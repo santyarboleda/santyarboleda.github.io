@@ -25,4 +25,4 @@ plugins:
   - jekyll-avatar
   - jekyll-mentions
   
-title: Prueba de titulo 2
+sidebar: mydoc_sidebar
