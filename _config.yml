@@ -1,1 +1,7 @@
 remote_theme: rundocs/jekyll-rtd-theme
+title: Prueba de titulo
+lang: en
+description: Write an awesome description for your new site here
+# plugin options
+readme_index:
+  with_frontmatter: true
