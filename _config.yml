@@ -1,4 +1,5 @@
 remote_theme: rundocs/jekyll-rtd-theme
+markdown: kramdown
 title: Prueba de titulo
 lang: en
 description: Write an awesome description for your new site here
