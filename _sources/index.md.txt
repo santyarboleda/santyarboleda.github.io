@@ -5,13 +5,10 @@
 
 # Python, Big data, Machine Learning y Cloud Computing
 
-**Docente Responsable:** Santiago Arboleda Quiroz
+Autor: Santiago Arboleda Quiroz
 
-**Email:** sarboledaq@unal.edu.co
+Email: sarboledaq@unal.edu.co
 
-Algo 1
-
-Algo 2
 
 ```{toctree}
 :caption: 'Temas:'
