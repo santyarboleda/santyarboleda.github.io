@@ -7,10 +7,10 @@
     "tags": []
    },
    "source": [
-    "Desempaquetado de listas --- 1:21 min\n",
+    "Desempaquetado de listas \n",
     "===\n",
     "\n",
-    "* 1:21 min | Última modificación: Octubre 4, 2021"
+    "* *Duración de la lección: 2 min*"
    ]
   },
   {
