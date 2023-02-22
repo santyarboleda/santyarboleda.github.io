@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="es" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Distribución de los datos &mdash; documentación de Python, Big data, Machine Learning y Cloud Computing - 0.1</title>
@@ -14,7 +14,9 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/translations.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
@@ -31,11 +33,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> Python, Big data, Machine Learning y Cloud Computing
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Python, Big data, Machine Learning y Cloud Computing
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -95,10 +101,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../../handling_data.html">Manipulación de datos usando Python</a> &raquo;</li>
-          <li><a href="../estadistica_descriptiva.html">Estadística Descriptiva</a> &raquo;</li>
-      <li>Distribución de los datos</li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../handling_data.html">Manipulación de datos usando Python</a></li>
+          <li class="breadcrumb-item"><a href="../estadistica_descriptiva.html">Estadística Descriptiva</a></li>
+      <li class="breadcrumb-item active">Distribución de los datos</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/ciencia_datos/estadistica_descriptiva/notebooks/1-04_distribution.ipynb.txt" rel="nofollow"> Ver código fuente de la página</a>
       </li>
@@ -218,10 +224,11 @@ div.nboutput.container div.prompt > div {
     }
 }
 
-/* disable scrollbars on prompts */
+/* disable scrollbars and line breaks on prompts */
 div.nbinput.container div.prompt pre,
 div.nboutput.container div.prompt pre {
     overflow: hidden;
+    white-space: pre;
 }
 
 /* input/output area */
@@ -387,9 +394,9 @@ div.rendered_html tbody tr:hover {
 }
 </style>
 <section id="Distribución-de-los-datos">
-<h1>Distribución de los datos<a class="headerlink" href="#Distribución-de-los-datos" title="Enlazar permanentemente con este título"></a></h1>
+<h1>Distribución de los datos<a class="headerlink" href="#Distribución-de-los-datos" title="Enlace permanente a este encabezado"></a></h1>
 <ul class="simple">
-<li><p><em>Duración de la lección: 8 min</em></p></li>
+<li><p>6:58 min | Última modificación: Diciembre 13, 2021 | <a class="reference external" href="https://youtu.be/d94QgIGDXTE">YouTube</a></p></li>
 </ul>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
@@ -413,14 +420,14 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <section id="Definición-del-problema">
-<h2>Definición del problema<a class="headerlink" href="#Definición-del-problema" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Definición del problema<a class="headerlink" href="#Definición-del-problema" title="Enlace permanente a este encabezado"></a></h2>
 <p>El <a class="reference external" href="https://es.wikipedia.org/wiki/Iris_flor_conjunto_de_datos">conjunto de datos de la flor Iris</a> contiene 150 muestras de las medidas del ancho y el largo del pétalo y del sépalo para las tres especies de esta flor (Iris setosa, Iris virginica e Iris versicolor). A partir de la muestra de datos se desean responder la siguiente pregunta:</p>
 <ul class="simple">
 <li><p><strong>P3</strong>.— ¿Cual es la distribución de probabilidades del ancho y largo del petalo y del sepalo para cada especie?</p></li>
 </ul>
 </section>
 <section id="Carga-de-datos">
-<h2>Carga de datos<a class="headerlink" href="#Carga-de-datos" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Carga de datos<a class="headerlink" href="#Carga-de-datos" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
@@ -598,7 +605,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Histograma">
-<h2>Histograma<a class="headerlink" href="#Histograma" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Histograma<a class="headerlink" href="#Histograma" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
@@ -655,7 +662,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Kernel-density-estimation">
-<h2>Kernel density estimation<a class="headerlink" href="#Kernel-density-estimation" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Kernel density estimation<a class="headerlink" href="#Kernel-density-estimation" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
@@ -681,7 +688,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Diagrama-de-violin">
-<h2>Diagrama de violin<a class="headerlink" href="#Diagrama-de-violin" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Diagrama de violin<a class="headerlink" href="#Diagrama-de-violin" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>

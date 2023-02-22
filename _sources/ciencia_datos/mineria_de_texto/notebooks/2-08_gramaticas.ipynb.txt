@@ -6,7 +6,7 @@
    "source": [
     "# Gramáticas\n",
     "\n",
-    "* *Duración de la lección: 30 min*"
+    "* *30 min* | Última modificación: Diciembre 10, 2020"
    ]
   },
   {

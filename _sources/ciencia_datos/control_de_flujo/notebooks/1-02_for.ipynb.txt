@@ -4,10 +4,10 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "Iteración usando for \n",
+    "Iteración usando for\n",
     "===\n",
     "\n",
-    "* *Duración de la lección: 14:09 min* "
+    "* Duración de la lección: 14:09 min"
    ]
   },
   {

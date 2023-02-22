@@ -7,10 +7,10 @@
     "tags": []
    },
    "source": [
-    "Old school string formatfing \n",
+    "Old school string formatfing\n",
     "===\n",
     "\n",
-    "* *Duración de la lección: 2 min*"
+    "* Duración de la lección: 1:29 min"
    ]
   },
   {

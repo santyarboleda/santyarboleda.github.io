@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="es" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Operaciones básicas sobre archivos de datos usando Python &mdash; documentación de Python, Big data, Machine Learning y Cloud Computing - 0.1</title>
+  <title>Operaciones básicas sobre archivos de datos usando Python — 20:33 min &mdash; documentación de Python, Big data, Machine Learning y Cloud Computing - 0.1</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -14,7 +14,9 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/translations.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
@@ -22,7 +24,7 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Índice" href="../../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../../search.html" />
-    <link rel="next" title="Procesamiento básico de datos usando Python" href="1-02_procesamiento_de_datos_con_python.html" />
+    <link rel="next" title="Procesamiento básico de datos usando Python — 12:22 min" href="1-02_procesamiento_de_datos_con_python.html" />
     <link rel="prev" title="Python: Ejemplos de Análisis de Datos" href="../ejemplos_analisis_datos.html" /> 
 </head>
 
@@ -31,11 +33,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> Python, Big data, Machine Learning y Cloud Computing
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Python, Big data, Machine Learning y Cloud Computing
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -52,7 +58,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../entrada_salida/entrada_salida.html">Entrada y Salida</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../errores_excepciones/errores_excepciones.html">Manejo de errores y excepciones</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../ejemplos_analisis_datos.html">Python: Ejemplos de Análisis de Datos</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Operaciones básicas sobre archivos de datos usando Python</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Operaciones básicas sobre archivos de datos usando Python — 20:33 min</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#Carga-de-datos-de-los-eventos-de-los-conductores">Carga de datos de los eventos de los conductores</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Visualización-de-datos">Visualización de datos</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Reorganización-de-las-columnas">Reorganización de las columnas</a></li>
@@ -66,8 +72,8 @@
 <li class="toctree-l4"><a class="reference internal" href="#Escritura-al-disco-como-una-tabla">Escritura al disco como una tabla</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="1-02_procesamiento_de_datos_con_python.html">Procesamiento básico de datos usando Python</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1-03_numpy.html">Introducción a NumPy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-02_procesamiento_de_datos_con_python.html">Procesamiento básico de datos usando Python — 12:22 min</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-03_numpy.html">Introducción a NumPy — 14:24 min</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../manipulacion_datos/manipulacion_datos.html">Manipulación de Datos con Pandas</a></li>
@@ -99,10 +105,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../../handling_data.html">Manipulación de datos usando Python</a> &raquo;</li>
-          <li><a href="../ejemplos_analisis_datos.html">Python: Ejemplos de Análisis de Datos</a> &raquo;</li>
-      <li>Operaciones básicas sobre archivos de datos usando Python</li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../handling_data.html">Manipulación de datos usando Python</a></li>
+          <li class="breadcrumb-item"><a href="../ejemplos_analisis_datos.html">Python: Ejemplos de Análisis de Datos</a></li>
+      <li class="breadcrumb-item active">Operaciones básicas sobre archivos de datos usando Python — 20:33 min</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/ciencia_datos/ejemplos_analisis_datos/notebooks/1-01_operaciones_basicas_sobre_datos.ipynb.txt" rel="nofollow"> Ver código fuente de la página</a>
       </li>
@@ -222,10 +228,11 @@ div.nboutput.container div.prompt > div {
     }
 }
 
-/* disable scrollbars on prompts */
+/* disable scrollbars and line breaks on prompts */
 div.nbinput.container div.prompt pre,
 div.nboutput.container div.prompt pre {
     overflow: hidden;
+    white-space: pre;
 }
 
 /* input/output area */
@@ -390,10 +397,10 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<section id="Operaciones-básicas-sobre-archivos-de-datos-usando-Python">
-<h1>Operaciones básicas sobre archivos de datos usando Python<a class="headerlink" href="#Operaciones-básicas-sobre-archivos-de-datos-usando-Python" title="Enlazar permanentemente con este título"></a></h1>
+<section id="Operaciones-básicas-sobre-archivos-de-datos-usando-Python-—-20:33-min">
+<h1>Operaciones básicas sobre archivos de datos usando Python — 20:33 min<a class="headerlink" href="#Operaciones-básicas-sobre-archivos-de-datos-usando-Python-—-20:33-min" title="Enlace permanente a este encabezado"></a></h1>
 <ul class="simple">
-<li><p><em>Duración de la lección: 21 min</em></p></li>
+<li><p>20:33 min | Última modificación: Octubre 12, 2021</p></li>
 </ul>
 <p>En este video se presenta un ejemplo práctico de la manipulación de archivos de datos en texto usando listas. Si bien, resulta mucho más facil realizar esta tarea usando librerías especializaxad en Python, el objetivo aquí es ejemplificar el uso de las estructuras de datos disponibles en Python puro.</p>
 <p>Al finalizar este tutorial, usted estará en capacidad de:</p>
@@ -409,7 +416,7 @@ div.rendered_html tbody tr:hover {
 <li><p>Escribir los resultados como una tabla a un archivo.</p></li>
 </ul>
 <section id="Carga-de-datos-de-los-eventos-de-los-conductores">
-<h2>Carga de datos de los eventos de los conductores<a class="headerlink" href="#Carga-de-datos-de-los-eventos-de-los-conductores" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Carga de datos de los eventos de los conductores<a class="headerlink" href="#Carga-de-datos-de-los-eventos-de-los-conductores" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
@@ -418,12 +425,12 @@ div.rendered_html tbody tr:hover {
 <span class="c1"># Se descarga el archivo directamente del repo al disco duro.</span>
 <span class="c1">#</span>
 <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/jdvelasq/datalabs/master/datasets/drivers/truck_event_text_partition.csv&quot;</span>
-<span class="o">!</span>wget --quiet <span class="o">{</span>url<span class="o">}</span> -P /tmp/
+<span class="o">!</span>wget<span class="w"> </span>--quiet<span class="w"> </span><span class="o">{</span>url<span class="o">}</span><span class="w"> </span>-P<span class="w"> </span>/tmp/
 
 <span class="c1">#</span>
 <span class="c1"># Visualiza el contenido del directorio</span>
 <span class="c1">#</span>
-<span class="o">!</span>ls -1 /tmp/*
+<span class="o">!</span>ls<span class="w"> </span>-1<span class="w"> </span>/tmp/*
 </pre></div>
 </div>
 </div>
@@ -562,7 +569,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Visualización-de-datos">
-<h2>Visualización de datos<a class="headerlink" href="#Visualización-de-datos" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Visualización de datos<a class="headerlink" href="#Visualización-de-datos" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
@@ -663,7 +670,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Reorganización-de-las-columnas">
-<h2>Reorganización de las columnas<a class="headerlink" href="#Reorganización-de-las-columnas" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Reorganización de las columnas<a class="headerlink" href="#Reorganización-de-las-columnas" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
@@ -695,7 +702,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Obtención-de-un-subconjunto-de-registros">
-<h2>Obtención de un subconjunto de registros<a class="headerlink" href="#Obtención-de-un-subconjunto-de-registros" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Obtención de un subconjunto de registros<a class="headerlink" href="#Obtención-de-un-subconjunto-de-registros" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
@@ -724,7 +731,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Filtrado-de-registros">
-<h2>Filtrado de registros<a class="headerlink" href="#Filtrado-de-registros" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Filtrado de registros<a class="headerlink" href="#Filtrado-de-registros" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
@@ -755,7 +762,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Búsqueda-de-registros-usando-expresiones-regulares">
-<h2>Búsqueda de registros usando expresiones regulares<a class="headerlink" href="#Búsqueda-de-registros-usando-expresiones-regulares" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Búsqueda de registros usando expresiones regulares<a class="headerlink" href="#Búsqueda-de-registros-usando-expresiones-regulares" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
@@ -900,7 +907,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Borrado-de-registros-duplicados">
-<h2>Borrado de registros duplicados<a class="headerlink" href="#Borrado-de-registros-duplicados" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Borrado de registros duplicados<a class="headerlink" href="#Borrado-de-registros-duplicados" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
@@ -932,7 +939,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Valores-únicos-por-campo">
-<h2>Valores únicos por campo<a class="headerlink" href="#Valores-únicos-por-campo" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Valores únicos por campo<a class="headerlink" href="#Valores-únicos-por-campo" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
@@ -975,7 +982,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Ordenamiento-de-registros-con-base-en-un-campo">
-<h2>Ordenamiento de registros con base en un campo<a class="headerlink" href="#Ordenamiento-de-registros-con-base-en-un-campo" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Ordenamiento de registros con base en un campo<a class="headerlink" href="#Ordenamiento-de-registros-con-base-en-un-campo" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
@@ -1008,7 +1015,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Obtención-de-un-subconjunto-de-columnas">
-<h2>Obtención de un subconjunto de columnas<a class="headerlink" href="#Obtención-de-un-subconjunto-de-columnas" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Obtención de un subconjunto de columnas<a class="headerlink" href="#Obtención-de-un-subconjunto-de-columnas" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
@@ -1052,7 +1059,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Escritura-al-disco-como-una-tabla">
-<h2>Escritura al disco como una tabla<a class="headerlink" href="#Escritura-al-disco-como-una-tabla" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Escritura al disco como una tabla<a class="headerlink" href="#Escritura-al-disco-como-una-tabla" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
@@ -1079,7 +1086,7 @@ div.rendered_html tbody tr:hover {
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;/tmp/specific_columns.csv&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">specific_columns</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">file</span><span class="p">)</span>
 
-<span class="o">!</span>cat /tmp/specific_columns.csv
+<span class="o">!</span>cat<span class="w"> </span>/tmp/specific_columns.csv
 </pre></div>
 </div>
 </div>
@@ -1104,7 +1111,7 @@ driverId,eventTime,eventType
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>rm /tmp/*
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>rm<span class="w"> </span>/tmp/*
 </pre></div>
 </div>
 </div>
@@ -1116,7 +1123,7 @@ driverId,eventTime,eventType
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
         <a href="../ejemplos_analisis_datos.html" class="btn btn-neutral float-left" title="Python: Ejemplos de Análisis de Datos" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
-        <a href="1-02_procesamiento_de_datos_con_python.html" class="btn btn-neutral float-right" title="Procesamiento básico de datos usando Python" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="1-02_procesamiento_de_datos_con_python.html" class="btn btn-neutral float-right" title="Procesamiento básico de datos usando Python — 12:22 min" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

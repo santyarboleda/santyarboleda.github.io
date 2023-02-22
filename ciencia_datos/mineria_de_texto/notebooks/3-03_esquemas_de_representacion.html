@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="es" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Esquemas de representacion &mdash; documentación de Python, Big data, Machine Learning y Cloud Computing - 0.1</title>
@@ -14,7 +14,9 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/translations.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
@@ -31,11 +33,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> Python, Big data, Machine Learning y Cloud Computing
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Python, Big data, Machine Learning y Cloud Computing
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -108,10 +114,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../../handling_data.html">Manipulación de datos usando Python</a> &raquo;</li>
-          <li><a href="../mineria_de_texto.html">Minería de texto</a> &raquo;</li>
-      <li>Esquemas de representacion</li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../handling_data.html">Manipulación de datos usando Python</a></li>
+          <li class="breadcrumb-item"><a href="../mineria_de_texto.html">Minería de texto</a></li>
+      <li class="breadcrumb-item active">Esquemas de representacion</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/ciencia_datos/mineria_de_texto/notebooks/3-03_esquemas_de_representacion.ipynb.txt" rel="nofollow"> Ver código fuente de la página</a>
       </li>
@@ -231,10 +237,11 @@ div.nboutput.container div.prompt > div {
     }
 }
 
-/* disable scrollbars on prompts */
+/* disable scrollbars and line breaks on prompts */
 div.nbinput.container div.prompt pre,
 div.nboutput.container div.prompt pre {
     overflow: hidden;
+    white-space: pre;
 }
 
 /* input/output area */
@@ -400,12 +407,12 @@ div.rendered_html tbody tr:hover {
 }
 </style>
 <section id="Esquemas-de-representacion">
-<h1>Esquemas de representacion<a class="headerlink" href="#Esquemas-de-representacion" title="Enlazar permanentemente con este título"></a></h1>
+<h1>Esquemas de representacion<a class="headerlink" href="#Esquemas-de-representacion" title="Enlace permanente a este encabezado"></a></h1>
 <ul class="simple">
-<li><p><em>Duración de la lección: 30 min</em></p></li>
+<li><p><em>30 min</em> | Última modificación: Sept 22, 2020</p></li>
 </ul>
 <section id="Preparacion-de-los-datos">
-<h2>Preparacion de los datos<a class="headerlink" href="#Preparacion-de-los-datos" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Preparacion de los datos<a class="headerlink" href="#Preparacion-de-los-datos" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
@@ -599,7 +606,7 @@ Overwriting labels.txt
 </div>
 </section>
 <section id="Preprocesamiento">
-<h2>Preprocesamiento<a class="headerlink" href="#Preprocesamiento" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Preprocesamiento<a class="headerlink" href="#Preprocesamiento" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
@@ -707,7 +714,7 @@ Overwriting labels.txt
 </div>
 </section>
 <section id="Bag-of-Words-(BoW)-model">
-<h2>Bag of Words (BoW) model<a class="headerlink" href="#Bag-of-Words-(BoW)-model" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Bag of Words (BoW) model<a class="headerlink" href="#Bag-of-Words-(BoW)-model" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
@@ -1060,7 +1067,7 @@ array([[0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
 </div>
 </section>
 <section id="Bag-of-N-Grams-model">
-<h2>Bag of N-Grams model<a class="headerlink" href="#Bag-of-N-Grams-model" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Bag of N-Grams model<a class="headerlink" href="#Bag-of-N-Grams-model" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
 </pre></div>
@@ -1447,7 +1454,7 @@ array([[0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
 </div>
 </section>
 <section id="TF-IDF-model">
-<h2>TF-IDF model<a class="headerlink" href="#TF-IDF-model" title="Enlazar permanentemente con este título"></a></h2>
+<h2>TF-IDF model<a class="headerlink" href="#TF-IDF-model" title="Enlace permanente a este encabezado"></a></h2>
 <div class="math notranslate nohighlight">
 \[tfidf= tf \times idf\]</div>
 <ul class="simple">
@@ -1962,7 +1969,7 @@ array([[0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
 </div>
 </section>
 <section id="Similaridad-de-documentos">
-<h2>Similaridad de documentos<a class="headerlink" href="#Similaridad-de-documentos" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Similaridad de documentos<a class="headerlink" href="#Similaridad-de-documentos" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
 </pre></div>
@@ -2335,7 +2342,7 @@ array([[0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
 </div>
 </section>
 <section id="Topic-Modeling-—-Latent-Dirichlet-Allocation">
-<h2>Topic Modeling — Latent Dirichlet Allocation<a class="headerlink" href="#Topic-Modeling-—-Latent-Dirichlet-Allocation" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Topic Modeling — Latent Dirichlet Allocation<a class="headerlink" href="#Topic-Modeling-—-Latent-Dirichlet-Allocation" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
 </pre></div>

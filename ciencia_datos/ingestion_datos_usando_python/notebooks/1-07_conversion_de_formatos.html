@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="es" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Conversión de formatos usando Pandas &mdash; documentación de Python, Big data, Machine Learning y Cloud Computing - 0.1</title>
+  <title>Conversión de formatos usando Pandas — 11:28 min &mdash; documentación de Python, Big data, Machine Learning y Cloud Computing - 0.1</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -14,7 +14,9 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
         <script src="../../../_static/translations.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
@@ -23,7 +25,7 @@
     <link rel="index" title="Índice" href="../../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../../search.html" />
     <link rel="next" title="Limpieza de datos" href="../../limpieza_de_datos/limpieza_de_datos.html" />
-    <link rel="prev" title="Importación de archivos XML" href="1-06_XML.html" /> 
+    <link rel="prev" title="Importación de archivos XML — 5:29 min" href="1-06_XML.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -31,11 +33,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> Python, Big data, Machine Learning y Cloud Computing
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Python, Big data, Machine Learning y Cloud Computing
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -55,13 +61,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../../manipulacion_datos/manipulacion_datos.html">Manipulación de Datos con Pandas</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../manipulacion_datos_sqlite/manipulacion_datos_sqlite.html">Manipulación de Datos con SQLite</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../ingestion_datos_usando_python.html">Ingestion de datos usand Python</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="1-01_text.html">Importación de texto en Python</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1-02_numpy.html">Importación de archivos numéricos usando NumPy</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1-03_CSV.html">Importación de archivos CSV</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1-04_pandas.html">Importación de archivos usando Pandas</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1-05_JSON.html">Importación de archivos JSON</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1-06_XML.html">Importación de archivos XML</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Conversión de formatos usando Pandas</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="1-01_text.html">Importación de texto en Python — 6:04 min</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-02_numpy.html">Importación de archivos numéricos usando NumPy — 6:53 min</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-03_CSV.html">Importación de archivos CSV — 8:17 min</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-04_pandas.html">Importación de archivos usando Pandas — 10:37 min</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-05_JSON.html">Importación de archivos JSON — 8:25 min</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1-06_XML.html">Importación de archivos XML — 5:29 min</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Conversión de formatos usando Pandas — 11:28 min</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#Preparación">Preparación</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Creación-de-una-tabla-de-ejemplo">Creación de una tabla de ejemplo</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Almacenamiento-del-archivo-en-disco">Almacenamiento del archivo en disco</a></li>
@@ -104,10 +110,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../../handling_data.html">Manipulación de datos usando Python</a> &raquo;</li>
-          <li><a href="../ingestion_datos_usando_python.html">Ingestion de datos usand Python</a> &raquo;</li>
-      <li>Conversión de formatos usando Pandas</li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../handling_data.html">Manipulación de datos usando Python</a></li>
+          <li class="breadcrumb-item"><a href="../ingestion_datos_usando_python.html">Ingestion de datos usand Python</a></li>
+      <li class="breadcrumb-item active">Conversión de formatos usando Pandas — 11:28 min</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/ciencia_datos/ingestion_datos_usando_python/notebooks/1-07_conversion_de_formatos.ipynb.txt" rel="nofollow"> Ver código fuente de la página</a>
       </li>
@@ -227,10 +233,11 @@ div.nboutput.container div.prompt > div {
     }
 }
 
-/* disable scrollbars on prompts */
+/* disable scrollbars and line breaks on prompts */
 div.nbinput.container div.prompt pre,
 div.nboutput.container div.prompt pre {
     overflow: hidden;
+    white-space: pre;
 }
 
 /* input/output area */
@@ -395,10 +402,10 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<section id="Conversión-de-formatos-usando-Pandas">
-<h1>Conversión de formatos usando Pandas<a class="headerlink" href="#Conversión-de-formatos-usando-Pandas" title="Enlazar permanentemente con este título"></a></h1>
+<section id="Conversión-de-formatos-usando-Pandas-—-11:28-min">
+<h1>Conversión de formatos usando Pandas — 11:28 min<a class="headerlink" href="#Conversión-de-formatos-usando-Pandas-—-11:28-min" title="Enlace permanente a este encabezado"></a></h1>
 <ul class="simple">
-<li><p><em>Duración de la lección: 12 min</em></p></li>
+<li><p>11:28 min | Última modificación: Octubre 13, 2021 | <a class="reference external" href="https://youtu.be/qKoJMhzz2Co">YouTube</a></p></li>
 </ul>
 <p>Una tarea común que se da en la práctica es convertir una tabla de datos de un formato a otro. Pandas posee herramientas que permiten realizar esta conversión de forma directa.</p>
 <p>Al finalizar el documento, usted estará en capacidad de leer y escribir tablas en los siguientes formatos:</p>
@@ -414,7 +421,7 @@ div.rendered_html tbody tr:hover {
 <li><p>Matlab y Octave.</p></li>
 </ul>
 <section id="Preparación">
-<h2>Preparación<a class="headerlink" href="#Preparación" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Preparación<a class="headerlink" href="#Preparación" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
@@ -428,7 +435,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Creación-de-una-tabla-de-ejemplo">
-<h2>Creación de una tabla de ejemplo<a class="headerlink" href="#Creación-de-una-tabla-de-ejemplo" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Creación de una tabla de ejemplo<a class="headerlink" href="#Creación-de-una-tabla-de-ejemplo" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
@@ -460,7 +467,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </section>
 <section id="Almacenamiento-del-archivo-en-disco">
-<h2>Almacenamiento del archivo en disco<a class="headerlink" href="#Almacenamiento-del-archivo-en-disco" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Almacenamiento del archivo en disco<a class="headerlink" href="#Almacenamiento-del-archivo-en-disco" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
@@ -470,7 +477,7 @@ div.rendered_html tbody tr:hover {
     <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
 <span class="p">)</span>
 
-<span class="o">!</span>cat /tmp/data.csv
+<span class="o">!</span>cat<span class="w"> </span>/tmp/data.csv
 </pre></div>
 </div>
 </div>
@@ -489,7 +496,7 @@ index,name,value
 </div>
 </section>
 <section id="Conversión-de-CSV-a-JSON">
-<h2>Conversión de CSV a JSON<a class="headerlink" href="#Conversión-de-CSV-a-JSON" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Conversión de CSV a JSON<a class="headerlink" href="#Conversión-de-CSV-a-JSON" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
@@ -503,7 +510,7 @@ index,name,value
     <span class="n">indent</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
 <span class="p">)</span>
 
-<span class="o">!</span>cat /tmp/data.json
+<span class="o">!</span>cat<span class="w"> </span>/tmp/data.json
 </pre></div>
 </div>
 </div>
@@ -550,7 +557,7 @@ index,name,value
     <span class="n">orient</span><span class="o">=</span><span class="s1">&#39;index&#39;</span><span class="p">,</span>
 <span class="p">)</span>
 
-<span class="o">!</span>cat /tmp/data.json
+<span class="o">!</span>cat<span class="w"> </span>/tmp/data.json
 </pre></div>
 </div>
 </div>
@@ -601,7 +608,7 @@ index,name,value
     <span class="n">orient</span><span class="o">=</span><span class="s1">&#39;split&#39;</span><span class="p">,</span>
 <span class="p">)</span>
 
-<span class="o">!</span>cat /tmp/data.json
+<span class="o">!</span>cat<span class="w"> </span>/tmp/data.json
 </pre></div>
 </div>
 </div>
@@ -666,7 +673,7 @@ index,name,value
     <span class="n">orient</span><span class="o">=</span><span class="s1">&#39;records&#39;</span><span class="p">,</span>
 <span class="p">)</span>
 
-<span class="o">!</span>cat /tmp/data.json
+<span class="o">!</span>cat<span class="w"> </span>/tmp/data.json
 </pre></div>
 </div>
 </div>
@@ -717,7 +724,7 @@ index,name,value
     <span class="n">orient</span><span class="o">=</span><span class="s1">&#39;columns&#39;</span><span class="p">,</span>
 <span class="p">)</span>
 
-<span class="o">!</span>cat /tmp/data.json
+<span class="o">!</span>cat<span class="w"> </span>/tmp/data.json
 </pre></div>
 </div>
 </div>
@@ -764,7 +771,7 @@ index,name,value
     <span class="n">orient</span><span class="o">=</span><span class="s1">&#39;values&#39;</span><span class="p">,</span>
 <span class="p">)</span>
 
-<span class="o">!</span>cat /tmp/data.json
+<span class="o">!</span>cat<span class="w"> </span>/tmp/data.json
 </pre></div>
 </div>
 </div>
@@ -815,7 +822,7 @@ index,name,value
     <span class="n">orient</span><span class="o">=</span><span class="s1">&#39;table&#39;</span><span class="p">,</span>
 <span class="p">)</span>
 
-<span class="o">!</span>cat /tmp/data.json
+<span class="o">!</span>cat<span class="w"> </span>/tmp/data.json
 </pre></div>
 </div>
 </div>
@@ -886,7 +893,7 @@ index,name,value
 </div>
 </section>
 <section id="Formato-nativo-de-Python">
-<h2>Formato nativo de Python<a class="headerlink" href="#Formato-nativo-de-Python" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Formato nativo de Python<a class="headerlink" href="#Formato-nativo-de-Python" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
@@ -919,7 +926,7 @@ index,name,value
 </div>
 </section>
 <section id="Archivos-delimitados-por-caracteres-con-Pandas">
-<h2>Archivos delimitados por caracteres con Pandas<a class="headerlink" href="#Archivos-delimitados-por-caracteres-con-Pandas" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Archivos delimitados por caracteres con Pandas<a class="headerlink" href="#Archivos-delimitados-por-caracteres-con-Pandas" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
@@ -932,7 +939,7 @@ index,name,value
     <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
 <span class="p">)</span>
 
-<span class="o">!</span>cat /tmp/data.csv
+<span class="o">!</span>cat<span class="w"> </span>/tmp/data.csv
 </pre></div>
 </div>
 </div>
@@ -964,7 +971,7 @@ index,name,value
     <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
 <span class="p">)</span>
 
-<span class="o">!</span>cat /tmp/data.csv2
+<span class="o">!</span>cat<span class="w"> </span>/tmp/data.csv2
 </pre></div>
 </div>
 </div>
@@ -1013,7 +1020,7 @@ index;name;value
 </div>
 </section>
 <section id="Formato-de-ancho-fijo-con-Pandas">
-<h2>Formato de ancho fijo con Pandas<a class="headerlink" href="#Formato-de-ancho-fijo-con-Pandas" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Formato de ancho fijo con Pandas<a class="headerlink" href="#Formato-de-ancho-fijo-con-Pandas" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
@@ -1067,7 +1074,7 @@ Writing /tmp/data.txt
 </div>
 </section>
 <section id="HTML-con-Pandas">
-<h2>HTML con Pandas<a class="headerlink" href="#HTML-con-Pandas" title="Enlazar permanentemente con este título"></a></h2>
+<h2>HTML con Pandas<a class="headerlink" href="#HTML-con-Pandas" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
@@ -1081,7 +1088,7 @@ Writing /tmp/data.txt
     <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
 <span class="p">)</span>
 
-<span class="o">!</span>cat /tmp/data.html
+<span class="o">!</span>cat<span class="w"> </span>/tmp/data.html
 </pre></div>
 </div>
 </div>
@@ -1130,7 +1137,7 @@ Writing /tmp/data.txt
 </div>
 </section>
 <section id="Microsoft-Excel">
-<h2>Microsoft Excel<a class="headerlink" href="#Microsoft-Excel" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Microsoft Excel<a class="headerlink" href="#Microsoft-Excel" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
@@ -1139,7 +1146,7 @@ Writing /tmp/data.txt
 <span class="c1"># Requiere esta librería para realizar la</span>
 <span class="c1"># lectura y escritura de archivos de Excel</span>
 <span class="c1">#</span>
-<span class="o">!</span>pip3 install --quiet openpyxl
+<span class="o">!</span>pip3<span class="w"> </span>install<span class="w"> </span>--quiet<span class="w"> </span>openpyxl
 </pre></div>
 </div>
 </div>
@@ -1189,7 +1196,7 @@ Writing /tmp/data.txt
 </div>
 </section>
 <section id="Formato-HDF5">
-<h2>Formato HDF5<a class="headerlink" href="#Formato-HDF5" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Formato HDF5<a class="headerlink" href="#Formato-HDF5" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
@@ -1197,7 +1204,7 @@ Writing /tmp/data.txt
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
 <span class="c1"># Se requiere esta librería</span>
 <span class="c1">#</span>
-<span class="o">!</span>pip3 install --quiet tables
+<span class="o">!</span>pip3<span class="w"> </span>install<span class="w"> </span>--quiet<span class="w"> </span>tables
 </pre></div>
 </div>
 </div>
@@ -1266,7 +1273,7 @@ Writing /tmp/data.txt
 </div>
 </section>
 <section id="STATA">
-<h2>STATA<a class="headerlink" href="#STATA" title="Enlazar permanentemente con este título"></a></h2>
+<h2>STATA<a class="headerlink" href="#STATA" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
@@ -1299,7 +1306,7 @@ Writing /tmp/data.txt
 </div>
 </section>
 <section id="Lectura-de-Matlab-y-Octave">
-<h2>Lectura de Matlab y Octave<a class="headerlink" href="#Lectura-de-Matlab-y-Octave" title="Enlazar permanentemente con este título"></a></h2>
+<h2>Lectura de Matlab y Octave<a class="headerlink" href="#Lectura-de-Matlab-y-Octave" title="Enlace permanente a este encabezado"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
@@ -1331,7 +1338,7 @@ Writing /tmp/data.txt
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
-        <a href="1-06_XML.html" class="btn btn-neutral float-left" title="Importación de archivos XML" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="1-06_XML.html" class="btn btn-neutral float-left" title="Importación de archivos XML — 5:29 min" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
         <a href="../../limpieza_de_datos/limpieza_de_datos.html" class="btn btn-neutral float-right" title="Limpieza de datos" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

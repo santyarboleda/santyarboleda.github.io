@@ -7,10 +7,10 @@
     "tags": []
    },
    "source": [
-    "Side effects en funciones \n",
+    "Side effects en funciones\n",
     "===\n",
     "\n",
-    "* *Duración de la lección: 7 min* "
+    "* Duración de la lección: 6:17 min"
    ]
   },
   {

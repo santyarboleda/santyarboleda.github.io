@@ -7,7 +7,7 @@
     "Declaraciones if-elif-else\n",
     "===\n",
     "\n",
-    "* *Duración de la lección: 13 min* "
+    "* Duración de la lección: 13 min"
    ]
   },
   {
